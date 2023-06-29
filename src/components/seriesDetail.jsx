@@ -1,0 +1,17 @@
+import styles from './seriesDetail.module.css';
+import flash from '../images/flash.jpg';
+
+export default function SeriesDetail(){
+    return(
+    <div className={styles.content}>
+        <img src={flash} alt="TEST" className={styles.image}/>
+        <h3>The flash</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies laoreet tincidunt. Vivamus placerat neque nisl, sed pretium risus auctor at. Sed eget eros vitae nulla finibus rutrum. Duis scelerisque malesuada accumsan. Maecenas viverra neque arcu, in porta est tincidunt eget. Pellentesque sit amet augue enim. Aenean faucibus laoreet sem, vitae euismod velit scelerisque ac. Vestibulum pulvinar enim felis, sit amet facilisis sem commodo eu. Integer fringilla ligula et quam sollicitudin luctus eget ultrices felis. Proin pretium hendrerit efficitur. Mauris in dapibus felis. Aenean ut nunc egestas, venenatis arcu at, aliquet tortor. Donec volutpat erat eu fermentum mattis. Integer volutpat feugiat sem, quis congue quam sollicitudin vel. Duis varius bibendum leo, ut tristique sem interdum nec.
+        Aenean non nisl ultrices, faucibus elit quis, auctor libero. Cras nisl quam, mattis id tincidunt nec, sodales ut eros. Proin consequat ex ut sagittis faucibus. Quisque lorem nisi, posuere vitae feugiat sed, congue vel nisi. Morbi consectetur mi consectetur sollicitudin feugiat. Suspendisse quis leo a magna dapibus suscipit nec ac arcu. Mauris in tortor pulvinar felis feugiat tempus. Praesent tempor sit amet nisi et ullamcorper. Mauris lectus dui, vestibulum sit amet enim quis, euismod viverra felis. Integer et congue nunc, scelerisque viverra lectus. Ut ornare ipsum in tortor aliquet tempus. Vestibulum euismod elit eget augue dignissim tincidunt. Nullam varius urna eros, ac imperdiet ipsum tempor eu. Sed consectetur venenatis nunc at pharetra. Nullam ac elit placerat, vestibulum felis sed, efficitur metus. Proin facilisis aliquet dolor, a malesuada ante pharetra id.
+        Suspendisse ut felis vel massa condimentum viverra. Donec accumsan mauris eu purus tempus fermentum. Maecenas eget leo sollicitudin, hendrerit urna eu, fringilla nulla. Ut euismod ipsum quis arcu volutpat, nec fringilla lorem ultricies. In finibus eget odio in consectetur. Nulla aliquam rutrum rutrum. Morbi in turpis in ex interdum cursus. Sed pharetra libero metus, et imperdiet enim dapibus in. Nullam euismod, magna sit amet fermentum rutrum, nunc quam mollis nulla, nec tincidunt eros leo vel ex. Ut non quam libero. Pellentesque a nunc facilisis, dictum elit non, viverra sapien. Sed finibus pharetra lectus a consectetur. Ut vel rutrum dui, sed tempor elit.
+        Sed lacus diam, gravida et enim nec, bibendum bibendum elit. Suspendisse sit amet ante tempor, dignissim enim nec, porta nisl. Suspendisse eget augue in nibh volutpat cursus eget a diam. Fusce aliquet sem vitae maximus molestie. Cras arcu arcu, consequat sit amet ante non, sollicitudin maximus neque. Cras ornare imperdiet sodales. Aliquam eu nulla eget nulla placerat auctor. Morbi suscipit nisl velit, eu ullamcorper ligula sodales eu. Suspendisse non aliquam mi. Morbi facilisis consequat venenatis. Quisque condimentum arcu id erat gravida suscipit. Fusce efficitur lorem condimentum ante dictum vulputate. Nullam fermentum iaculis ligula ac varius. In finibus sollicitudin leo, vel cursus turpis iaculis egestas. Sed sed quam feugiat, congue metus ut, lobortis tellus. Etiam purus sem, tristique sit amet dapibus at, convallis eget lorem.
+        </p>
+    </div>
+    );
+
+}
