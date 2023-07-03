@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import { Routes, Route, Outlet, Link, Router } from "react-router-dom";
 import './App.css';
 import Header from './components/header';
-import SeriesGrid from './components/seriesGrid';
+import MainPage from "./pages/mainPage";
 import SeriesDetail from "./components/seriesDetail";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<SeriesGrid />} />
-        <Route path="/detail" element={<SeriesDetail />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/detail/:animeId" element={<SeriesDetail />} />
       </Routes>      
       
     </div>

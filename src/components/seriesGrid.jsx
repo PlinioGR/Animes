@@ -1,7 +1,8 @@
 import styles from './grid.module.css';
-import ItemCard from './card';
+import ItemCard from './animeCard';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function SeriesGrid(){
     const [series, setSeries] = useState([]);
