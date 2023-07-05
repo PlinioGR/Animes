@@ -1,7 +1,7 @@
-import SeriesGrid from "../components/seriesGrid";
+import AnimesGrid from "../components/animesGrid";
 
 export default function MainPage(){
     return(
-        <SeriesGrid />
+        <AnimesGrid />
     )
 }

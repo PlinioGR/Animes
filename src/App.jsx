@@ -1,10 +1,9 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom/client";
-import { Routes, Route, Outlet, Link, Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from './components/header';
 import MainPage from "./pages/mainPage";
-import SeriesDetail from "./components/seriesDetail";
+import AnimeDetail from "./pages/animeDetail";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/detail/:animeId" element={<SeriesDetail />} />
+        <Route path="/detail/:animeId" element={<AnimeDetail />} />
       </Routes>      
       
     </div>
