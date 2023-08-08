@@ -5,7 +5,7 @@ export default function Header(){
     return(
         <header>
         <div className={styles.title}>
-            <h1>Top Animes</h1>
+            <h1>Anime library</h1>
         </div>
         <div className={styles.searchBar}>
             <SearchBar />

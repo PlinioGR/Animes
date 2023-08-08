@@ -6,7 +6,9 @@
     margin-top: 80px;
     justify-content: center;
     text-align: justify;
-
+    display: grid;
+    column-gap: 60px;
+    grid-template-columns: auto auto;
 }
 
 .image{
@@ -14,4 +16,8 @@
     margin-right: auto;
     width: 320px;
     height: 450px;
+}
+
+.loader{
+    margin-left: 50%;
 }
