@@ -3,13 +3,23 @@ import ItemCard from './animeCard';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ClipLoader from "react-spinners/ClipLoader";
+import { useSearchParams } from 'react-router-dom';
 
 export default function AnimesGrid(){
     const [animes, setAnimes] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    let [searchParams, setSearchParams] = useSearchParams();
+    
+    const query = searchParams.get('search');
+
+    const search =  query
+    ? "anime?q=" + query : "top/anime";
+ 
+
     useEffect(() => {
-        fetch("https://api.jikan.moe/v4/top/anime", {
+        setLoading(true);
+        fetch("https://api.jikan.moe/v4/" + search, {
             headers: {
                 "Content-Type" : "application/json;charset=utf-8",
             },
@@ -17,7 +27,7 @@ export default function AnimesGrid(){
             setAnimes(data.data);
             setLoading(false);
         });
-    }, []);
+    }, [search]);
 
 
     if(loading){
