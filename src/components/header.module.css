@@ -1,6 +1,11 @@
 .title{
     margin-bottom: 20px;
-    
+    text-decoration: none;
+    color: white;
+}
+
+.title:hover{
+    color: gray;
 }
 
 .searchBar{

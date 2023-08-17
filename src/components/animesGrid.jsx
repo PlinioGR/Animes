@@ -1,4 +1,4 @@
-import styles from './grid.module.css';
+import styles from './animesGrid.module.css';
 import ItemCard from './animeCard';
 import { useEffect } from 'react';
 import { useState } from 'react';

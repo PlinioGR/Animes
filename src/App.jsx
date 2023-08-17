@@ -13,7 +13,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/detail/:animeId" element={<AnimeDetail />} />
+        <Route path="/anime/:animeId" element={<AnimeDetail />} />
       </Routes>      
       
     </div>
