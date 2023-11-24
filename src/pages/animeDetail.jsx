@@ -2,6 +2,7 @@ import styles from './animeDetail.module.css';
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import ClipLoader from "react-spinners/ClipLoader";
+import { getAnime } from '../utils/httpClient';
 
 export default function AnimeDetail(){
     const { animeId } = useParams();
@@ -9,15 +10,13 @@ export default function AnimeDetail(){
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("https://api.jikan.moe/v4/anime/" + animeId, {
-            headers: {
-                "Content-Type" : "application/json;charset=utf-8",
-            },
-        }).then((result) => result.json()).then(data => {
+        const path = "anime/" + animeId;
+        getAnime(path).then(data => {
             setAnime(data.data);
             setLoading(false);
         });
-    }, []);
+        
+    }, [animeId]);
 
     if(loading){
         return(

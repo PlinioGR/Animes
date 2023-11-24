@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import ClipLoader from "react-spinners/ClipLoader";
 import { useSearchParams } from 'react-router-dom';
+import { getAnime } from '../utils/httpClient';
 
 export default function AnimesGrid(){
     const [animes, setAnimes] = useState([]);
@@ -19,14 +20,12 @@ export default function AnimesGrid(){
 
     useEffect(() => {
         setLoading(true);
-        fetch("https://api.jikan.moe/v4/" + search, {
-            headers: {
-                "Content-Type" : "application/json;charset=utf-8",
-            },
-        }).then((result) => result.json()).then(data => {
+
+        getAnime(search).then(data => {
             setAnimes(data.data);
             setLoading(false);
         });
+        
     }, [search]);
 
 
@@ -41,7 +40,7 @@ export default function AnimesGrid(){
         );
     }
 
-    if(animes){
+    if(animes && animes.length > 0){
 
         return(
             <div className={styles.container}>

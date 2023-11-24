@@ -13,4 +13,5 @@
 .button{
     height: 100%;
     width: 40px;
+    cursor: pointer;
 }
